@@ -25,9 +25,12 @@ public class MybatisConfig {
 
     @Bean
     public DataSource getDataSource() {
+        String databaseUrl = propertiesUtil.getProperty("mysql.info.url", "");
+
         DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
-        dataSourceBuilder.driverClassName("net.sf.log4jdbc.sql.jdbcapi.DriverSpy");
-        dataSourceBuilder.url("jdbc:log4jdbc:mariadb://montt-factory.com:5506/friko");
+//        dataSourceBuilder.driverClassName("com.mysql.cj.jdbc.Driver"); // MySQL 드라이버 클래스명
+        dataSourceBuilder.driverClassName("net.sf.log4jdbc.sql.jdbcapi.DriverSpy"); // Log4JDBC 드라이버 클래스
+        dataSourceBuilder.url("jdbc:mysql://" + databaseUrl); // MySQL 연결 URL
         dataSourceBuilder.username(propertiesUtil.getProperty("mysql.info.usernm", ""));
         dataSourceBuilder.password(propertiesUtil.getProperty("mysql.info.userpw", ""));
         return dataSourceBuilder.build();
@@ -43,8 +46,6 @@ public class MybatisConfig {
 //        sessionFactory.setTypeAliasesPackage("com.owol.friko.app.dto.*");
 //        sessionFactory.setTypeAliasesPackage("com.owol.friko.app.entity.*");
         sessionFactory.setConfigLocation(applicationContext.getResource("classpath:base/mybatis-config.xml"));
-
-
         return sessionFactory;
     }
 }
