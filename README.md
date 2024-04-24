@@ -10,8 +10,7 @@ Friendly Korea는 친근한 한국 을 뜻 하고 외국인들에기 직관적�
 2. 앱사용자가 취업지원 서비스를 받을 수 있게 구직공고 사이트를 제공해 줍니다.
 3. 앱사용자가 행정 서비스 및 복지 서비스를 받을 수 있게 정보를 제공해 줍니다.
 
-### 🛠 커밋 규칙
-https://velog.io/@jiheon/Git-Commit-message-%EA%B7%9C%EC%B9%99
+
 
 ### ⏰ 개발 기간
 2021년 4월 2일 ~   
@@ -27,3 +26,6 @@ https://velog.io/@jiheon/Git-Commit-message-%EA%B7%9C%EC%B9%99
 
 ### 📌 FRIKO_MOBILE Github 바로가기
 https://github.com/KimSoonHo-web/FRIKOMOBILE
+
+### 📌 커밋 규칙
+https://velog.io/@jiheon/Git-Commit-message-%EA%B7%9C%EC%B9%99
