@@ -20,7 +20,7 @@ Friendly Korea는 친근한 한국 을 뜻 하고 외국인들에기 직관적�
 - 김순호
 
 ### 📌 기술
-- Springboot, mybaties,Flutter, JavaScript, axios, vue.js 
+- Springboot, mybatis,Flutter, JavaScript, axios, vue.js 
 - aws, mySQLdb  
 
 
